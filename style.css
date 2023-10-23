@@ -41,4 +41,6 @@ body,html{
     padding: 10px;
     border-radius: 5px;
     background-color: antiquewhite;
+    color: #000;
+    font-weight: 700;
 }
