@@ -32,15 +32,35 @@ body,html{
     height: 60px;
     background-color: rgb(116, 170, 116);
 }
-#elem{
+.elem{
+    
     display: flex;
+    align-items: center;
     gap: 20px;
-    width: 10%;
+    width: 10%; 
 }
 .box{
     padding: 10px 20px;
     border-radius: 5px;
     background-color: antiquewhite;
-    color: #000;
+    color: #3d6e1d;
     font-weight: 700;
+}
+#Pbtm{
+    height: calc(100% - 60px);
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: #3d6e1d;
+    color: aliceblue;
+    border-radius: 50%;
 }
