@@ -1,12 +1,14 @@
 var timer = 60;
 var score = 0;
+var hit = 0;
 
 function increaseScore(){
-
+    score += 10;
+    document.querySelector("#Scores").textContent = score;
 }
 function hitval(){
-    var rn = Math.floor(Math.random()*10);
-    document.querySelector("#hitval").textContent = rn;
+    hit = Math.floor(Math.random()*10);
+    document.querySelector("#hitval").textContent = hit;
 }
 function bubbleMaker(){
     var clutter = "";
@@ -28,7 +30,16 @@ function setTimer(){
     },1000)
 }
 
+document.querySelector("#Pbtm").addEventListener('click',function(details){
+    var sr = Number(details.target.textContent)
+    console.log(sr)
+    if(hit === sr){
+        bubbleMaker();
+        increaseScore();
+        hitval();
+    }
+})
 
-hitval();
 setTimer();
+hitval();
 bubbleMaker();
