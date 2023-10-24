@@ -1,7 +1,9 @@
 var timer = 60;
 var score = 0;
 
-
+function increaseScore(){
+    
+}
 function hitval(){
     var rn = Math.floor(Math.random()*10);
     document.querySelector("#hitval").textContent = rn;
