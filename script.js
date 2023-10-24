@@ -2,7 +2,7 @@ var timer = 60;
 var score = 0;
 
 function increaseScore(){
-    
+
 }
 function hitval(){
     var rn = Math.floor(Math.random()*10);
@@ -27,6 +27,8 @@ function setTimer(){
         }
     },1000)
 }
+
+
 hitval();
 setTimer();
 bubbleMaker();
